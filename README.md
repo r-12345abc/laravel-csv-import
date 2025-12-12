@@ -2,6 +2,7 @@
 app/Console/Commands
 
 # メモ
+```
 docker-compose exec laravel-csv-import-mysql bash
 
 mysql -uroot -proot
@@ -13,3 +14,4 @@ php artisan import:csv users.csv // 1億行のcsvファイルを読み込みDB�
 php artisan generate:csv 1500000 users150.csv // 150万行のcsvファイル作成
 php artisan check:csv-users users150.csv // 150万行のcsvファイルのIDがDBに存在するか確認
 php artisan check:csv-users-fast users150.csv // 150万行のcsvファイルのIDがDBに存在するか確認
+```
